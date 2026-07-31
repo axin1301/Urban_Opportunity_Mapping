@@ -1,6 +1,6 @@
-# OppMoE: Prompt-Conditioned Mixture-of-Experts for Urban Opportunity Mapping
+# Generalizable Urban Opportunity Prediction from Satellite Imagery with Region–Task Mixture-of-Experts
 
-This repository contains the training, evaluation, baseline, and analysis code for OppMoE, a prompt-conditioned region-task Mixture-of-Experts model for transferable urban opportunity mapping.
+This repository contains the training, evaluation, and baseline code for OppMoE, a region-task Mixture-of-Experts model for generalizable urban opportunity mapping.
 
 ## Structure
 
