@@ -1,4 +1,4 @@
-﻿# 50-City Label Construction
+﻿# UrbanOpp benchmark construction (50-City Labels)
 
 This folder contains the scripts used to build satellite tile (patch) labels for the 50-city urban opportunity dataset (UrbanOpp).
 
