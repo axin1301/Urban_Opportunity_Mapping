@@ -4,6 +4,8 @@ This is the folder for the manuscript **"Generalizable Urban Opportunity Predict
 
 This project introduces **UrbanOpp**, a benchmark for urban opportunity prediction from satellite imagery, together with **OppMoE**, a region–task mixture-of-experts framework designed for cross-city and cross-indicator generalization.
 
+![UrbanOpp Benchmark](./figs/fig1-1.png)
+
 The repository is organized into three main directories:
 
 ```
