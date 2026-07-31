@@ -1,0 +1,184 @@
+city,country,region,income_level,hemisphere,task_key,task_name,indicator_column,definition,task_family,shared_mechanism,distinguishing_focus,expected_output_behavior,related_tasks,visible_cues,spatial_mechanism,high_score_patterns,low_score_patterns,caution,model,system_prompt,user_prompt,generated_prompt,status,prompt_tokens,completion_tokens,total_tokens
+Phoenix,United States,North America,High income,north,digital_total_cell_intensity,Digital Total Cell Intensity,digital_total_cell_intensity,Estimate the overall intensity of cellular infrastructure and broad mobile-service presence in the grid.,digital_infrastructure,"This family of tasks depends on how urban demand intensity, built concentration, corridor connectivity, and economic activity support communications infrastructure deployment and technology upgrading.","Prioritize broad total telecom presence and likely overall deployment intensity, not whether the network is especially modern.",Higher scores should correspond to stronger overall cellular infrastructure intensity.,"[""digital_lte_intensity"", ""digital_modernization_tmi""]","[""dense built-up development"", ""continuous urban fabric"", ""commercial or mixed-use concentration"", ""major transport corridors"", ""service-intensive neighborhood centers""]","Total cellular intensity is often higher where overall communication demand is strong across dense, active, and continuously developed urban areas, regardless of whether the network is highly modernized.","dense urban fabric, active mixed-use districts, corridor-linked neighborhoods, broad service-intensive development","sparse peripheral settlements, open land, fragmented built-up areas, low-activity urban edges","Focus on broad telecom demand and likely total network presence, not specifically on advanced-generation technology quality.",openai/gpt-5.2,"You are an expert urban remote sensing and urban science writer. Generate a concise, structured task prompt for satellite-image-based urban indicator prediction. The prompt must emphasize transfer-friendly task semantics, shared urban mechanisms, task-specific satellite cues, and only broad regional interpretation. Do not use observed label statistics, sample counts, or dataset-specific prevalence as evidence. Avoid mentioning unavailable modalities, hidden metadata, or ground-truth labels. Prefer dense and discriminative wording over long explanations. Write in clear academic English and do not include markdown code fences.","Generate one structured prompt for satellite-image prediction of an urban indicator.
+
+Return exactly six labeled sections in plain text:
+Task:
+What is measured:
+Shared urban mechanism:
+Task-specific satellite cues:
+What distinguishes it from related tasks:
+Expected output behavior:
+
+Task metadata:
+Task name: Digital Total Cell Intensity
+Indicator column: digital_total_cell_intensity
+Definition: Estimate the overall intensity of cellular infrastructure and broad mobile-service presence in the grid.
+Task family: digital_infrastructure
+Related task keys in the same semantic family: digital_lte_intensity, digital_modernization_tmi
+Shared mechanism: This family of tasks depends on how urban demand intensity, built concentration, corridor connectivity, and economic activity support communications infrastructure deployment and technology upgrading.
+Relevant cues: dense built-up development; continuous urban fabric; commercial or mixed-use concentration; major transport corridors; service-intensive neighborhood centers
+Task-specific mechanism: Total cellular intensity is often higher where overall communication demand is strong across dense, active, and continuously developed urban areas, regardless of whether the network is highly modernized.
+Task-specific distinguishing focus: Prioritize broad total telecom presence and likely overall deployment intensity, not whether the network is especially modern.
+High-score patterns: dense urban fabric, active mixed-use districts, corridor-linked neighborhoods, broad service-intensive development
+Low-score patterns: sparse peripheral settlements, open land, fragmented built-up areas, low-activity urban edges
+Caution: Focus on broad telecom demand and likely total network presence, not specifically on advanced-generation technology quality.
+Expected output behavior: Higher scores should correspond to stronger overall cellular infrastructure intensity.
+
+City context:
+City: Phoenix
+Country: United States
+Region: North America
+Income level: High income
+Hemisphere: north
+
+Requirements:
+1. The Task section should restate the task name only.
+2. The What is measured section should explain what the indicator means in urban terms, not in dataset terms.
+3. The Shared urban mechanism section should describe the transferable mechanism that this task shares with semantically related tasks.
+4. The Task-specific satellite cues section should emphasize visually inferable overhead cues and how they support this particular task.
+5. The What distinguishes it from related tasks section should explain how this task differs from nearby tasks in the same semantic family.
+6. The Expected output behavior section should describe what higher scores and lower scores mean.
+7. If regional interpretation is useful, fold it briefly into the shared mechanism or task-specific cues instead of adding a long separate discussion.
+8. Keep the whole prompt compact, ideally around 90-150 words.
+9. Use short, information-dense sentences rather than long prose.
+10. Do not mention observed means, medians, data availability, grid counts, or sample imbalance.
+11. Do not mention unavailable non-image features as model inputs.
+12. Keep the semantics stable enough that semantically related tasks could share a common representation across cities while still remaining distinguishable.","Task:
+Digital Total Cell Intensity
+
+What is measured:
+Overall intensity of cellular infrastructure and broad mobile-service presence implied by urban demand and deployment density within the grid.
+
+Shared urban mechanism:
+Cellular deployment scales with sustained demand from concentrated population and jobs, continuous built form, corridor connectivity, and economic activity. Across high-income North American metros, intensity typically follows large, connected activity centers and transport-linked subcenters.
+
+Task-specific satellite cues:
+Dense, continuous urban fabric; large impervious surfaces; commercial/mixed-use clusters; big-box retail and employment campuses; major highways, interchanges, and arterial grids indicating high mobility flows; airport/industrial logistics zones; extensive neighborhood centers versus scattered low-density housing and open desert land.
+
+What distinguishes it from related tasks:
+Prioritize total telecom presence and likely overall deployment intensity, not signals of LTE-specific coverage or network modernization/upgrade level.
+
+Expected output behavior:
+Higher scores: dense, active, corridor-linked urban areas with broad service-intensive development. Lower scores: sparse peripheral settlements, fragmented low-activity edges, open land, and discontinuous built-up patches.",ok,700,224,924
+Phoenix,United States,North America,High income,north,digital_lte_intensity,Digital LTE Intensity,digital_lte_intensity,"Estimate LTE-specific cellular infrastructure intensity, reflecting stronger advanced mobile-network deployment in the grid.",digital_infrastructure,"This family of tasks depends on how urban demand intensity, built concentration, corridor connectivity, and economic activity support communications infrastructure deployment and technology upgrading.","Prioritize LTE-specific and higher-capacity mobile deployment, not just generic telecom presence.",Higher scores should correspond to stronger LTE-oriented digital infrastructure intensity.,"[""digital_total_cell_intensity"", ""digital_modernization_tmi""]","[""dense built environment"", ""high-demand commercial districts"", ""transport-connected corridors"", ""well-developed service hubs"", ""continuous and economically active urban fabric""]",LTE intensity tends to be higher where communication demand is not only strong but also advanced enough to justify denser higher-capacity mobile-network deployment.,"strong urban cores, developed commercial zones, connected service hubs, mature corridor-linked districts","sparse fringe areas, weak-demand settlements, undeveloped land, less-developed peripheral urban fabric",Emphasize advanced-network intensity rather than total telecom presence; not every high-demand area necessarily indicates strong LTE deployment.,openai/gpt-5.2,"You are an expert urban remote sensing and urban science writer. Generate a concise, structured task prompt for satellite-image-based urban indicator prediction. The prompt must emphasize transfer-friendly task semantics, shared urban mechanisms, task-specific satellite cues, and only broad regional interpretation. Do not use observed label statistics, sample counts, or dataset-specific prevalence as evidence. Avoid mentioning unavailable modalities, hidden metadata, or ground-truth labels. Prefer dense and discriminative wording over long explanations. Write in clear academic English and do not include markdown code fences.","Generate one structured prompt for satellite-image prediction of an urban indicator.
+
+Return exactly six labeled sections in plain text:
+Task:
+What is measured:
+Shared urban mechanism:
+Task-specific satellite cues:
+What distinguishes it from related tasks:
+Expected output behavior:
+
+Task metadata:
+Task name: Digital LTE Intensity
+Indicator column: digital_lte_intensity
+Definition: Estimate LTE-specific cellular infrastructure intensity, reflecting stronger advanced mobile-network deployment in the grid.
+Task family: digital_infrastructure
+Related task keys in the same semantic family: digital_total_cell_intensity, digital_modernization_tmi
+Shared mechanism: This family of tasks depends on how urban demand intensity, built concentration, corridor connectivity, and economic activity support communications infrastructure deployment and technology upgrading.
+Relevant cues: dense built environment; high-demand commercial districts; transport-connected corridors; well-developed service hubs; continuous and economically active urban fabric
+Task-specific mechanism: LTE intensity tends to be higher where communication demand is not only strong but also advanced enough to justify denser higher-capacity mobile-network deployment.
+Task-specific distinguishing focus: Prioritize LTE-specific and higher-capacity mobile deployment, not just generic telecom presence.
+High-score patterns: strong urban cores, developed commercial zones, connected service hubs, mature corridor-linked districts
+Low-score patterns: sparse fringe areas, weak-demand settlements, undeveloped land, less-developed peripheral urban fabric
+Caution: Emphasize advanced-network intensity rather than total telecom presence; not every high-demand area necessarily indicates strong LTE deployment.
+Expected output behavior: Higher scores should correspond to stronger LTE-oriented digital infrastructure intensity.
+
+City context:
+City: Phoenix
+Country: United States
+Region: North America
+Income level: High income
+Hemisphere: north
+
+Requirements:
+1. The Task section should restate the task name only.
+2. The What is measured section should explain what the indicator means in urban terms, not in dataset terms.
+3. The Shared urban mechanism section should describe the transferable mechanism that this task shares with semantically related tasks.
+4. The Task-specific satellite cues section should emphasize visually inferable overhead cues and how they support this particular task.
+5. The What distinguishes it from related tasks section should explain how this task differs from nearby tasks in the same semantic family.
+6. The Expected output behavior section should describe what higher scores and lower scores mean.
+7. If regional interpretation is useful, fold it briefly into the shared mechanism or task-specific cues instead of adding a long separate discussion.
+8. Keep the whole prompt compact, ideally around 90-150 words.
+9. Use short, information-dense sentences rather than long prose.
+10. Do not mention observed means, medians, data availability, grid counts, or sample imbalance.
+11. Do not mention unavailable non-image features as model inputs.
+12. Keep the semantics stable enough that semantically related tasks could share a common representation across cities while still remaining distinguishable.","Task:
+Digital LTE Intensity
+
+What is measured:
+Strength of LTE-oriented cellular infrastructure deployment in an urban grid, reflecting capacity-focused, modern mobile network provision aligned with advanced digital service demand.
+
+Shared urban mechanism:
+Across digital_infrastructure tasks, deployment scales with concentrated population and employment, dense built form, corridor connectivity, and sustained economic activity that justify investment and technology upgrading. In high-income North American metros, mature service economies and freeway-linked subcenters often structure this intensity.
+
+Task-specific satellite cues:
+Look for continuous, high-density urban fabric; large commercial/office clusters; major retail/service hubs; industrial logistics zones; and strongly connected freeway/arterial corridors with intense development. Favor mature, infilled districts and multi-nodal cores over isolated development.
+
+What distinguishes it from related tasks:
+Emphasize higher-capacity, LTE-specific modernization rather than generic telecom presence (total cell intensity) or broad upgrading propensity (modernization indices). High demand alone is insufficient without cues of mature, infrastructure-ready urbanization.
+
+Expected output behavior:
+Higher scores: strong urban cores, developed commercial zones, connected service hubs, mature corridor-linked districts. Lower scores: sparse fringes, low-intensity settlements, undeveloped land, and weakly urbanized peripheries.",ok,697,255,952
+Phoenix,United States,North America,High income,north,digital_modernization_tmi,Digital Modernization / LTE Share,digital_modernization_tmi,"Estimate the modernization level of cellular infrastructure, including the degree to which newer network technologies dominate local service provision.",digital_infrastructure,"This family of tasks depends on how urban demand intensity, built concentration, corridor connectivity, and economic activity support communications infrastructure deployment and technology upgrading.","Prioritize how modern or upgraded the network is relative to overall telecom presence, not raw total deployment alone.",Higher scores should correspond to stronger digital infrastructure modernization.,"[""digital_total_cell_intensity"", ""digital_lte_intensity""]","[""high-intensity urban development"", ""well-developed commercial districts"", ""major infrastructure corridors"", ""dense service concentration"", ""connected mature urban cores""]","Digital modernization is higher where the urban environment supports technology upgrading, meaning the network is likely newer or more advanced relative to total cellular presence.","mature developed centers, strong corridor access, concentrated service districts, economically established urban zones","underserved peripheral areas, disconnected settlements, sparse development, places with likely legacy or limited infrastructure","Prioritize technology upgrading and modernization relative to total network presence, not just overall demand or density.",openai/gpt-5.2,"You are an expert urban remote sensing and urban science writer. Generate a concise, structured task prompt for satellite-image-based urban indicator prediction. The prompt must emphasize transfer-friendly task semantics, shared urban mechanisms, task-specific satellite cues, and only broad regional interpretation. Do not use observed label statistics, sample counts, or dataset-specific prevalence as evidence. Avoid mentioning unavailable modalities, hidden metadata, or ground-truth labels. Prefer dense and discriminative wording over long explanations. Write in clear academic English and do not include markdown code fences.","Generate one structured prompt for satellite-image prediction of an urban indicator.
+
+Return exactly six labeled sections in plain text:
+Task:
+What is measured:
+Shared urban mechanism:
+Task-specific satellite cues:
+What distinguishes it from related tasks:
+Expected output behavior:
+
+Task metadata:
+Task name: Digital Modernization / LTE Share
+Indicator column: digital_modernization_tmi
+Definition: Estimate the modernization level of cellular infrastructure, including the degree to which newer network technologies dominate local service provision.
+Task family: digital_infrastructure
+Related task keys in the same semantic family: digital_total_cell_intensity, digital_lte_intensity
+Shared mechanism: This family of tasks depends on how urban demand intensity, built concentration, corridor connectivity, and economic activity support communications infrastructure deployment and technology upgrading.
+Relevant cues: high-intensity urban development; well-developed commercial districts; major infrastructure corridors; dense service concentration; connected mature urban cores
+Task-specific mechanism: Digital modernization is higher where the urban environment supports technology upgrading, meaning the network is likely newer or more advanced relative to total cellular presence.
+Task-specific distinguishing focus: Prioritize how modern or upgraded the network is relative to overall telecom presence, not raw total deployment alone.
+High-score patterns: mature developed centers, strong corridor access, concentrated service districts, economically established urban zones
+Low-score patterns: underserved peripheral areas, disconnected settlements, sparse development, places with likely legacy or limited infrastructure
+Caution: Prioritize technology upgrading and modernization relative to total network presence, not just overall demand or density.
+Expected output behavior: Higher scores should correspond to stronger digital infrastructure modernization.
+
+City context:
+City: Phoenix
+Country: United States
+Region: North America
+Income level: High income
+Hemisphere: north
+
+Requirements:
+1. The Task section should restate the task name only.
+2. The What is measured section should explain what the indicator means in urban terms, not in dataset terms.
+3. The Shared urban mechanism section should describe the transferable mechanism that this task shares with semantically related tasks.
+4. The Task-specific satellite cues section should emphasize visually inferable overhead cues and how they support this particular task.
+5. The What distinguishes it from related tasks section should explain how this task differs from nearby tasks in the same semantic family.
+6. The Expected output behavior section should describe what higher scores and lower scores mean.
+7. If regional interpretation is useful, fold it briefly into the shared mechanism or task-specific cues instead of adding a long separate discussion.
+8. Keep the whole prompt compact, ideally around 90-150 words.
+9. Use short, information-dense sentences rather than long prose.
+10. Do not mention observed means, medians, data availability, grid counts, or sample imbalance.
+11. Do not mention unavailable non-image features as model inputs.
+12. Keep the semantics stable enough that semantically related tasks could share a common representation across cities while still remaining distinguishable.","Task:
+Digital Modernization / LTE Share
+
+What is measured:
+The relative modernization of local cellular infrastructure—how strongly newer network technologies (e.g., LTE and successors) likely dominate service provision compared with legacy systems in the same area.
+
+Shared urban mechanism:
+Modern communications upgrading tends to track sustained urban demand, concentrated built form, strong economic activity, and corridor connectivity that justify continual reinvestment in network equipment. In a high-income North American city, modernization is generally strongest where urban systems are most mature and intensively used.
+
+Task-specific satellite cues:
+Look for mature urban cores, dense commercial and mixed-use districts, major highway interchanges and continuous corridors, large employment centers, and high-intensity development patterns that imply frequent technology refresh. Contrast with sparse, fragmented, or disconnected peripheral areas suggesting slower upgrading.
+
+What distinguishes it from related tasks:
+Focus on technology mix and upgrading relative to overall telecom presence, not the absolute level of cellular deployment or total LTE intensity alone.
+
+Expected output behavior:
+Higher scores: established centers and well-connected service districts with signs of sustained reinvestment. Lower scores: underserved fringes, low-density settlements, or isolated areas likely reliant on older or limited infrastructure.",ok,699,241,940
