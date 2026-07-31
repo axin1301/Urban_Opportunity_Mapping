@@ -8,9 +8,9 @@ The repository is organized into three main directories:
 
 ```
 .
-├── generated_labels/
-├── label_construction_50cities/
-└── train_and_eval_codes/
+├── generated_labels (UrbanOpp Benchmark)/
+├── label_construction_50cities (UrbanOpp dataset construction pipeline)/
+└── train_and_eval_codes (OppMoE)/
 ```
 
 ## Repository Structure
