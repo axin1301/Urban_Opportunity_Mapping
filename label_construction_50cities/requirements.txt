@@ -1,0 +1,10 @@
+duckdb
+geopandas
+numpy
+pandas
+pyarrow
+rasterio
+requests
+scikit-learn
+shapely
+tqdm
